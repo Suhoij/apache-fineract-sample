@@ -18,7 +18,19 @@ $ npm install https://github.com/ksondz/apache-fineract-api.git
 
 ## Usage
 
+```js
+import fineract from 'apache-fineract-sample';
+const fineractService = fineract();
 
+fineractService.getClient(1)
+               .then(function(client) {
+                  console.log(client);
+               })
+               .catch(function(error) {
+                  console.log(error);
+               });
+
+```
 
 ## Running tests
 
